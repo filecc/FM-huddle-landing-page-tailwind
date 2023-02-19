@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/filecc/FM-huddle-landing-page-tailwind](https://github.com/filecc/FM-huddle-landing-page-tailwind)
-- Live Site URL: [https://filecc.github.io/FM-huddle-landing-page/](https://filecc.github.io/FM-huddle-landing-page/)
+- Live Site URL: [https://filecc.github.io/FM-huddle-landing-page-tailwind/](https://filecc.github.io/FM-huddle-landing-page-tailwind/)
 
 ## My process
 
@@ -42,5 +42,4 @@ Users should be able to:
 
 ## Author
 
-@filecc
-[]
+@filecc (Instagram/Twitter/Github)
