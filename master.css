@@ -1,0 +1,14 @@
+:root {
+    --veryPaleCyan: hsl(193, 100%, 96%);
+    --veryDarkCyan: #00252e;
+    --grayishBlue: hsl(208, 11%, 55%);
+    --pink: #ff52bf;
+}
+
+header {
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #edfafe;
+}

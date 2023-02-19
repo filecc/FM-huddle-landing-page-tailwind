@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huddle Homepage (Tailwind CSS)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huddlePink: '#ff52bf',
+                        darkcyan: '#00252e',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- 
+    Header
+   -->
+    <header>
+        <!-- 
+        navbar
+     -->
+        <div class="container mx-auto max-w-screen-lg px-4">
+            <nav class="flex justify-between py-6">
+                <div class="flex justify-center items-center w-44 animate-bounce">
+                    <img class="w-full" src="./images/logo.svg" alt="huddle logo">
+                </div>
+
+                <a class="py-2 px-12 rounded-full bg-white shadow-md text-xs" href="/">Try it free</a>
+            </nav>
+
+            <!-- 
+        hero
+     -->
+            <div class="flex md:flex-row flex-col justify-between items-center mt-8 pb-6">
+                <div class="md:w-5/12 md:px-10 px-0 w-full text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="font-bold text-3xl leading-[2rem]">Build The Community Your Fans Will Love</h1>
+                    <p class="py-10 md:py-6 text-slate-600">Huddle re-imagines the way we build communities. You have a voice,
+                        but so does your audience.
+                        Create connections with your users as you engage in genuine discussion.</p>
+                    <a class="py-3 px-12 rounded-full bg-huddlePink text-white shadow-md text-xs font-bold hover:bg-pink-500 transition-all duration-500"
+                       href="">Get Started For Free</a>
+                </div>
+                <div class="md:w-7/12 w-full mt-8 md:mb-8">
+                    <img class="w-full" src="./images/illustration-mockups.svg" alt="mockup">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 
+        main
+     -->
+    <main class="container mx-auto max-w-screen-lg mt-20 px-4">
+        <div class="flex flex-col gap-9">
+            <!-- 
+                first card
+             -->
+            <div class="flex md:flex-row flex-col-reverse justify-between items-center bg-white drop-shadow-md rounded-lg p-6">
+                <div class="md:w-3/5 w-full px-12">
+                    <h2 class="md:text-2xl text-3xl font-bold text-center md:text-left md:py-0 py-10 text-darkcyan">Grow Together</h2>
+                    <p class="md:pr-6 pr-0 py-4 text-slate-600 md:text-left text-center md:text-md text-xl">Generate meaningful discussions with your audience and build a
+                        strong, loyal community.
+                        Think of the insightful conversations you miss out on with a feedback form.</p>
+                </div>
+                <div class="md:w-2/5 w-full">
+                    <img class="w-full" aria-hidden="true" src="./images/illustration-grow-together.svg"
+                         alt="grow together">
+                </div>
+            </div>
+            <!-- 
+                second card
+             -->
+            <div class="flex md:flex-row flex-col-reverse justify-between items-center bg-white drop-shadow-md rounded-lg p-6">
+                <div class="md:w-3/5 w-full px-12">
+                    <h2 class="md:text-2xl text-3xl font-bold text-center md:text-left md:py-0 py-10 text-darkcyan">Flowing Conversations</h2>
+                    <p class="pr-6 py-4 text-slate-600 md:text-left text-center md:text-md text-xl">You wouldn't paginate a conversation in real life, so why do it
+                        online? Our threads
+                        have just-in-time loading for a more natural flow.</p>
+                </div>
+                <div class="md:w-2/5 w-full">
+                    <img class="w-full" aria-hidden="true" src="./images/illustration-flowing-conversation.svg"
+                         alt="flowing conversation">
+                </div>
+            </div>
+            <!-- 
+                thir card
+             -->
+            <div class="flex md:flex-row flex-col-reverse justify-between items-center bg-white drop-shadow-md rounded-lg p-6 mb-12">
+                <div class="md:w-3/5 w-full px-12">
+                    <h2 class="md:text-2xl text-3xl font-bold text-center md:text-left md:py-0 py-10 text-darkcyan">Your Users</h2>
+                    <p class="pr-6 py-4 text-slate-600 md:text-left text-center md:text-md text-xl">It takes no time at all to integrate Huddle with your app's
+                        authentication solution.
+                        This means, once signed in to your app, your users can start chatting immediately.</p>
+                </div>
+                <div class="md:w-2/5 w-full">
+                    <img class="w-full" aria-hidden="true" src="./images/illustration-your-users.svg" alt="your users">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        footer
+     -->
+    <footer class="bg-darkcyan md:mt-28 mt-12 pb-12 text-slate-200 px-4">
+        <div class="container mx-auto max-w-screen-lg">
+            <div class="bg-white text-center drop-shadow-md p-8 rounded-2xl md:w-6/12 w-10/12 mx-auto relative -top-20">
+                <h1 class="py-6 text-2xl font-bold text-slate-800">Ready To Build Your Community?</h1>
+                <a class="py-3 px-12 rounded-full bg-huddlePink text-white shadow-md text-xs font-bold hover:bg-pink-500 transition-all duration-500"
+                   href="/">Get Started For Free</a>
+            </div>
+            <div><img class="invert saturate-0 w-48" src="./images/logo.svg" alt="logo"></div>
+        </div>
+        <div class="container mx-auto max-w-screen-lg md:flex mt-10 text-sm">
+            <div class="md:w-5/12 w-full">
+                <div class="flex justify-start items-start"><i class="fa-solid fa-location-pin mr-3"></i>Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua</div>
+                <div class="my-3 flex justify-start items-center"><i
+                       class="fa-solid fa-phone-volume mr-3"></i>+1-543-123-4567</div>
+                <div class="flex justify-start items-center"><i class="fa-solid fa-envelope mr-3"></i>
+                    example@huddle.com</div>
+            </div>
+            <div class="md:flex w-4/12 justify-center gap-7 md:my-0 my-7">
+                <ul>
+                    <li>About Us</li>
+                    <li class="my-3">What We Do</li>
+                    <li class="md:mb-0 mb-3">FAQ</li>
+                </ul>
+
+                <ul>
+                    <li>Career</li>
+                    <li class="my-3">Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex md:w-3/12 w-full gap-4 md:ml-6 ml-0 justify-center">
+                    <li
+                        class="p-2 border-solid border-t border-r border-l border-b border-slate-400 rounded-full w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-twitter text-xs "></i></li>
+                    <li
+                        class="p-2 border-solid border-t border-r border-l border-b border-slate-400 rounded-full w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-facebook-f text-xs"></i></li>
+                    <li
+                        class="p-2 border-solid border-t border-r border-l border-b border-slate-400 rounded-full w-6 h-6 flex justify-center items-center">
+                        <i class="fa-brands fa-instagram text-xs"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
